@@ -30,15 +30,15 @@ Code                             | Description
 - You can directly set arbitrary `Wiring` properties, which adds them to the cache. This can be done to update the cached reference to a node that has changed in the tree, or to use `Wiring` to implement global variables that only exist for the current scene (and are lost once the scene change).
 - If you set a custom property `Wiring.XYZ = null`, Godot will generate an error if you then attempt to read `Wiring.XYZ`. As a workaround, access `Wiring._cache["XYZ"]` instead.
 - Compared to the conventional pattern of exporting node references and setting them in the editor, one advantage of using *Wiring* is that swapping out subtrees is easier to manage. Instead of having to change every reference to the old subtree, setting the new reference in `Wiring` is all that's needed.
-- The name "Wiring" comes from the concept of various components being able to communicate with one other through back-end connections (using the analogy of a physical control panel), regardless of how the controls are arranged on the front end.
+- The name "Wiring" comes from the concept of various components being able to communicate with one other through back-end connections (using the analogy of a physical control panel) regardless of how the controls are arranged on the front end.
 
 # Installation
 
 ## Installing From Godot AssetLib
 
 1. Switch to the "AssetLib" tab in the Godot editor.
-2. Search for "Wiring".
-3. Click and install the Wiring addon.
+2. Search for "wiring".
+3. Click and install the *Wiring* addon.
 
 ![Installing via AssetLib](Media/README/InstallViaAssetLib.png)
 
@@ -48,6 +48,15 @@ Code                             | Description
 
 2. Move or drag the `addons` folder into a Godot project.
 
-3. Enable the plug-in under Project > Project Settings... > Plug-ins.
+## Enabling the Plugin
+
+Enable the plugin under Project > Project Settings... > Plug-ins.
 
 ![Enabling the Plugin](Media/README/EnablePlugin.png)
+
+## Demo Project
+
+There's a demo project utilizing *Wiring* in the [Demo Project](DemoProject) folder.
+
+![Demo Project](Media/DemoProject.png)
+![Demo Project Source](Media/DemoProject-Source.jpeg)
