@@ -3,8 +3,8 @@ A simple Godot 4.x plugin that allows efficient name-based access to any scene n
 
 About      | Current Release
 -----------|-----------------------
-Version    | 1.0.1
-Date       | January 17, 2024
+Version    | 1.1
+Date       | January 18, 2024
 Change Log | [Change Log](ChangeLog.md)
 Platform   | Godot 4.x (tested on 4.2)
 License    | [MIT License](LICENSE)

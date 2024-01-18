@@ -14,7 +14,7 @@ func _get( node_name:StringName )->Variant:
 	if _cache.has(node_name):
 		return _cache[node_name]
 
-	var node = _cached_scene.find_child( node_name )
+	var node = _cached_scene.find_child( node_name, true, false )
 	if node:
 		_cache[node_name] = node
 		return node
